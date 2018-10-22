@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS bamazon_db;
 CREATE DATABASE bamazon_db;
 
 USE bamazon_db;
@@ -8,7 +9,7 @@ CREATE TABLE products (
     department_name VARCHAR(255),
     price DECIMAL(6,2),
     stock_quantity INT,
-    PRIMARY VALUE(item_id)
+    PRIMARY KEY(item_id)
 );
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
@@ -21,4 +22,4 @@ VALUES ("Pokeball", "Items", 1.50, 50),
 ("Quick Attack", "Moves", 10.35, 15),
 ("Sleep Powder", "Moves", 14.60, 3),
 ("Dragon Rage", "Moves", 15.00, 5),
-("Giga Drain", "Moves", 12.95, 10),
+("Giga Drain", "Moves", 12.95, 10)
